@@ -1,30 +1,9 @@
-# Residual-UNet-for-Left-Ventricle-segmentation
-This repository related to our article: 
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8382035/ in which a new concept called residual learning is utilized to improve the performance of deep learning schemes against gradient vanishing problems. For this purpose, the Residual Network of Residual Network (i.e., Residual of Residual) substructure is utilized inside the main deep learning architecture (e.g., Unet), which provides more significant detection
-indexes. 
-
-<img src="/images/ROR_Unet.jpg" alt="Alt text" title="Optional title">
-
-Results and Conclusion: The proposed method’s performances and its alternatives were evaluated on Sunnybrook Cardiac Data as a reliable dataset in the left ventricle segmentation. The results show that the detection parameters are improved at least by 5%, 3.5%, 8.1%, and
-11.4% compared to its deep alternatives in terms of Jaccard, Dice, precision, and false-positive rate indexes, respectively. These improvements were made when the recall parameter was reduced to a negligible value (i.e., approximately 1%). Overall, the proposed method can be used as a suitable tool for more accurate detection of the left ventricle in MRI images.
-
-<img src="/images/Result.png" alt="Alt text" title="Optional title">
+# Enhanced Heart Health Assessment via Mechatronics Device with Echocardiography images using Deep Learning and based on Ejection Fraction Analysis
+First, scikit-image and OpenCV are used for image preprocessing on the echocardiogram pictures in order to eliminate noise and improve contrast. Next, semantic segmentation precisely identifies the borders of the left ventricle (LV) of the heart by utilizing U-net with TensorFlow. This multi-step procedure guarantees accurate LV identification and segmentation, which is essential for further research, like the use of Simpson's biplane approach to calculate ejection fraction.The left ventricle's ejection fraction evaluates heart function and helps with diagnosis, prognosis, and therapy choices, especially when managing heart failure and cardiovascular disease.
 
 
-## Getting Started
+Raspbian Pi is used in the gadget for automation, apart from image processing and segmentation. It coordinates the gathering, processing, and presentation of data, improving productivity and user engagement. In addition, the device's casing is made of unique parts made possible by 3D printing technology, which guarantees longevity and exact fit. This Raspberry Pi and 3D printing combination highlights progress in software and hardware and results in a complete solution for improved heart health assessment.
 
-### Prerequisites
 
-* Keras 2.0
-* opencv for python
-* Theano / Tensorflow / CNTK
 
-  $ pip install -r requierments.txt
-  
-  $ python setup.py install
-  
-### Training
-For training and evaluating please run codes in the related jupyter files.
 
-# Reference
-https://github.com/divamgupta/image-segmentation-keras
